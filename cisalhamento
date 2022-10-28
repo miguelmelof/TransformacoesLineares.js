@@ -1,0 +1,43 @@
+var pergunta = prompt("Escolha entre horizontal e vertical:").split(" ");
+    
+    if(pergunta == "horizontal"){
+    
+    var x = parseFloat(prompt("Valor de x:"));
+    
+    console.log("X = " + x);
+    
+    var y = parseFloat(prompt("Valor de y:"));
+
+    console.log("Y = " + y);
+
+    var k = parseFloat(prompt("Valor do fator k:"));
+
+    console.log("[ " + x + " " + y + " " + 1 + " ]" + " x " + "[ " + 1 + " " + k + " " + 0 + " ]");
+    console.log("  " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + 0 + " " + 1 + " " + 0 + " ]");
+    console.log("  " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + 0 + " " + 0 + " " + 1 + " ]");
+    
+    //Aqui é o resultado do cisalhamento
+    console.log(" ");
+    console.log("RESULTADO: " + "[ " + ((x*1) + (y*0) + (1*0)) + " " + ((x*k) + (y*1) + (1*0)) + " " + ((x*0) + (y*0) + (1*1)) + "]");
+    
+    } else if(pergunta == "vertical"){
+
+
+        var x = parseFloat(prompt("Valor de x:"));
+    
+    console.log("X = " + x);
+    
+    var y = parseFloat(prompt("Valor de y:"));
+
+    console.log("Y = " + y);
+
+    var k = parseFloat(prompt("Valor do fator k:"));
+
+    console.log("[ " + x + " " + y + " " + 1 + " ]" + " x " + "[ " + 1 + " " + 0 + " " + 0 + " ]");
+    console.log("  " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + k + " " + 1 + " " + 0 + " ]");
+    console.log("  " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + 0 + " " + 0 + " " + 1 + " ]");
+    
+    //Aqui é o resultado do cisalhamento
+    console.log(" ");
+    console.log("RESULTADO: " + "[ " + ((x*1) + (y*k) + (1*0)) + " " + ((x*0) + (y*1) + (1*0)) + " " + ((x*0) + (y*0) + (1*1)) + "]");
+    }
