@@ -1,0 +1,77 @@
+ var pergunta = prompt("Escolha entre 2d e 3d:").split(" ");
+    
+    if(pergunta == "2d"){
+    
+                //Trans. 2D:
+        
+    //Coloque suas variáveis e seus cálculos iniciais aqui:
+    var x = parseFloat(prompt("Valor de x:"));
+    var Tx = parseFloat(prompt("Valor de Tx:"));
+    
+    var Dx = x + Tx;
+    
+    console.log("Dx = " + Dx);
+    
+    var y = parseFloat(prompt("Valor de y:"));
+    var Ty = parseFloat(prompt("Valor de Ty:"));
+    
+    var Dy = y + Ty;
+    
+    console.log("Dy = " + Dy);
+    //PARE AQUI
+
+    //Aqui está o produto(multiplicacao) das duas matrizes, isso é apenas uma forma visual de dizer que estamos multiplicando as matrizes.
+    //Mude apenas as numeracoes e talvez as variáveis se tiver diferente das minhas(x, y)
+    console.log("[ " + x + " " + y + " " + 1 + " ]" + " x " + "[ " + 1 + " " + 0 + " " + 0 + " ]")
+    console.log("  " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + 0 + " " + 1 + " " + 0 + " ]")
+    console.log("  " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + Dx + " " + Dy + " " + 1 + " ]")
+    //PARE AQUI
+
+    //Aqui é o resultado, onde você coloca a conta que você faz para chegar ao resultado, NAO importa qual conta seja, contanto que chegue ao resultado
+    //correto, é só escrever entre os parenteses azuis (apague os amarelos): EXEMPLO SE SUAS CORES FOREM DIFERENTES = (azul(amarelo))
+    console.log(" ")
+    console.log("RESULTADO: " + "[ " + ((x*1) + (y*0) + (1*Dx)) + " " + ((x*0) + (y*1) + (1*Dy)) + " ]")
+    //FIM!
+    
+        } else if(pergunta == "3d"){
+    
+                //Trans. 3D:
+        
+    //Coloque suas variáveis e seus cálculos iniciais aqui:
+    var x = parseFloat(prompt("Valor de x:"));
+    var Tx = parseFloat(prompt("Valor de Tx:"));
+    
+    var Dx = x + Tx;
+    
+    console.log("Dx = " + Dx);
+    
+    var y = parseFloat(prompt("Valor de y:"));
+    var Ty = parseFloat(prompt("Valor de Ty:"));
+    
+    var Dy = y + Ty;
+    
+    console.log("Dy = " + Dy);
+    
+    var z = parseFloat(prompt("Valor de z:"));
+    var Tz = parseFloat(prompt("Valor de Tz:"));
+    
+    var Dz = z + Tz;
+    
+    console.log("Dz = " + Dz);
+    //PARE AQUI
+
+    //Aqui está o produto(multiplicacao) das duas matrizes, isso é apenas uma forma visual de dizer que estamos multiplicando as matrizes.
+    //Mude apenas as numeracoes e talvez as variáveis se tiver diferente das minhas(x, y, z)
+    console.log("[ " + x + " " + y + " " + z + " " + 1 + " ]" + " x " + "[ " + 1 + " " + 0 + " " + 0 + " " + 0 + " ]")
+    console.log("  " + " " + " " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + 0 + " " + 1 + " " + 0 + " " + 0 + " ]")
+    console.log("  " + " " + " " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + 0 + " " + 0 + " " + 1 + " " + 0 + " ]")
+    console.log("  " + " " + " " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + Dx + " " + Dy + " " + Dz + " " + 1 + " ]")
+    //PARE AQUI
+
+    //Aqui é o resultado, onde você coloca a conta que você faz para chegar ao resultado, NAO importa qual conta seja, contanto que chegue ao resultado
+    //correto, é só escrever entre os parenteses azuis (apague os amarelos): EXEMPLO SE SUAS CORES FOREM DIFERENTES = (azul(amarelo))
+    console.log(" ")
+    console.log("RESULTADO: " + "[ " + ((x*1) + (y*0) + (z*0) + (1*Dx)) + " " + ((x*0) + (y*1) + (z*0) + (1*Dy)) + " " + ((x*0) + (y*0) + (z*1) + (1*Dz)) + " ]")
+    //FIM!
+
+        }
