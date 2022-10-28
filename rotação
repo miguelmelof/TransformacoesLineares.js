@@ -1,0 +1,39 @@
+var dimensao = prompt("2D OU 3D?");
+if(dimensao == "2D") {
+var x = parseFloat(prompt("x")); 
+var y = parseFloat(prompt("y"));
+var angulo = parseInt(prompt("angulo a ser rotacionado"));
+var newX = (x * Math.cos(angulo) - y * Math.sin(angulo)).toFixed(2);
+var newY = (x * Math.sin(angulo) -  y * Math.cos(angulo)).toFixed(2);
+console.log("X: " + x + "  " + "Y: " + y );
+console.log("angulo de rotacao: " + angulo);
+console.log("[ " + x + " " + y + " " + 1 + " ]" + " x " + "[ " + "cos" + " " + "-sin" + " " + 0 + " ]")
+console.log("  " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + "sin" + " " + "cos" + " " + 0 + " ]")
+console.log("  " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + 0 + " " + 0 + " " + 1 + " ]")
+console.log(" ")
+console.log("RESULTADO: " + "[ " + (newX) + " " + (newY) + " ]")
+}else if(dimensao == "3D") {
+    var x0 = parseFloat(prompt("eixo x"));
+    var y0 = parseFloat(prompt("eixo y"));
+    var z0 = parseFloat(prompt("eixo z"));
+    var angulo3d = parseFloat(prompt("angulo de rotacao"))
+    var eixo = prompt("voce deseja rotacionar em torno de X, Y ou Z?")
+    if(eixo == "X") {
+        z3d = (z0 * Math.cos(angulo3d) - y0 * Math.sin(angulo3d)).toFixed(2)
+        y3d = (z0 * Math.sin(angulo3d) + y0 * Math.cos(angulo3d)).toFixed(2)
+        console.log("EIXO Z SE ROTACIONANDO A Y EM TORNO DE X COM UM ANGULO DE " + angulo3d);
+        console.log("[ " + x0 + " " + y0 + " " + z0 + "1" + " ]" + " x " + "[ " + "cos" + " " + "-sin" + " " + 0 + " " + 0 + " ]")
+        console.log("  " + " " + " " + " " + " " + " " + "  " + "   " + "    [ " + "sin" + " " + "cos" + " " + 0 + " " + 0 + " ]")
+        console.log("  " + " " + " " + " " + " " + " " + "  " + "   " + "    [ " + 0 + " " + 0 + " " + 0 + " " + 1 + " ]")
+        console.log("Novo eixo Z: " + z3d + "   Novo eixo Y: " + y3d)
+    }else if(eixo == "Y") {
+        x3d = (x0 * Math.cos(angulo3d) - z0 * Math.sin(angulo3d)).toFixed(2)
+        z3d = (x0 * Math.sin(angulo3d) + z0 * Math.cos(angulo3d)).toFixed(2)
+        console.log("EIXO X SE ROTACIONANDO A Z EM TORNO DE Y COM UM ANGULO DE " + angulo3d);
+        console.log("Novo eixo X: " + x3d + "   Novo eixo Z: " + z3d)
+    }else if (eixo == "Z") {
+        x3d = (x0 * Math.cos(angulo3d) - y0 * Math.sin(angulo3d)).toFixed(2)
+        y3d = (x0 * Math.sin(angulo3d) + y0 * Math.cos(angulo3d)).toFixed(2)
+        console.log("EIXO X SE ROTACIONANDO A Y EM TORNO DE Z COM UM ANGULO DE " + angulo3d);
+        console.log("Novo eixo X: " + x3d + "   Novo eixo Y: " + y3d)
+    }
