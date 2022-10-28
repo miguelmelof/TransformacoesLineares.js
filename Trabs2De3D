@@ -1,0 +1,139 @@
+var pergunta = prompt("Escolha entre 2d e 3d:").split(" ");
+    
+    if(pergunta == "2d"){
+    
+        var reflexao = prompt("Em qual eixo você deseja refletir?").split(" ");
+
+                //Reflexão 2D:
+        
+    //Coloque suas variáveis e seus cálculos iniciais aqui:
+    var x = parseFloat(prompt("Valor de x:"));
+    
+    console.log("X = " + x);
+    
+    var y = parseFloat(prompt("Valor de y:"));
+
+    console.log("Y = " + y);
+    //PARE AQUI
+
+    //Aqui está o produto(multiplicacao) das duas matrizes, isso é apenas uma forma visual de dizer que estamos multiplicando as matrizes.
+    //Mude apenas as numeracoes e talvez as variáveis se tiver diferente das minhas(x, y)
+    //ESSA PARTE EM ESPECÍFICO É APENAS SE SUA CONTA PRECISAR DO CÁLCULO DE CADA EIXO (x, y, z):
+        //no eixo x:
+        if(reflexao == "x"){
+    console.log("[ " + x + " " + y + " " + 1 + " ]" + " x " + "[ " + 1 + " " + 0 + " " + 0 + " ]")
+    console.log("  " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + 0 + " " + -1 + " " + 0 + " ]")
+    console.log("  " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + 0 + " " + 0 + " " + 1 + " ]")
+    //PARE AQUI
+
+    //Aqui é o resultado, onde você coloca a conta que você faz para chegar ao resultado, NAO importa qual conta seja, contanto que chegue ao resultado
+    //correto, é só escrever entre os parenteses amarelos (apague os roxos): EXEMPLO SE SUAS CORES FOREM DIFERENTES = (amarelo(roxo))
+    console.log(" ")
+    console.log("RESULTADO: " + "[ " + ((x*1) + (y*0) + (1*0)) + " " + ((x*0) + (y*(-1)) + (1*0)) + " ]")
+    //FIM DESSE EIXO!
+        }
+
+    //Aqui está o produto(multiplicacao) das duas matrizes, isso é apenas uma forma visual de dizer que estamos multiplicando as matrizes.
+    //Mude apenas as numeracoes e talvez as variáveis se tiver diferente das minhas(x, y)
+               //no eixo y:
+               if(reflexao == "y"){
+    console.log("[ " + x + " " + y + " " + 1 + " ]" + " x " + "[ " + -1 + " " + 0 + " " + 0 + " ]")
+    console.log("  " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + 0 + " " + 1 + " " + 0 + " ]")
+    console.log("  " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + 0 + " " + 0 + " " + 1 + " ]")
+    //PARE AQUI
+    
+    //Aqui é o resultado, onde você coloca a conta que você faz para chegar ao resultado, NAO importa qual conta seja, contanto que chegue ao resultado
+    //correto, é só escrever entre os parenteses amarelos (apague os roxos): EXEMPLO SE SUAS CORES FOREM DIFERENTES = (amarelo(roxo))
+    console.log(" ")
+    console.log("RESULTADO: " + "[ " + ((x*(-1)) + (y*0) + (1*0)) + " " + ((x*0) + (y*1) + (1*0)) + " ]")
+    //FIM DESSE EIXO!
+        }
+
+    //Aqui está o produto(multiplicacao) das duas matrizes, isso é apenas uma forma visual de dizer que estamos multiplicando as matrizes.
+    //Mude apenas as numeracoes e talvez as variáveis se tiver diferente das minhas(x, y)
+                       //no eixo z:
+                       if(reflexao == "z"){
+    console.log("[ " + x + " " + y + " " + 1 + " ]" + " x " + "[ " + -1 + " " + 0 + " " + 0 + " ]")
+    console.log("  " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + 0 + " " + -1 + " " + 0 + " ]")
+    console.log("  " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + 0 + " " + 0 + " " + 1 + " ]")
+    //PARE AQUI
+
+    //Aqui é o resultado, onde você coloca a conta que você faz para chegar ao resultado, NAO importa qual conta seja, contanto que chegue ao resultado
+    //correto, é só escrever entre os parenteses amarelos (apague os roxos): EXEMPLO SE SUAS CORES FOREM DIFERENTES = (amarelo(roxo))
+    console.log(" ")
+    console.log("RESULTADO: " + "[ " + ((x*(-1)) + (y*0) + (1*0)) + " " + ((x*0) + (y*(-1)) + (1*0)) + " ]")
+    //FIM DESSE EIXO!
+        }
+    
+        } else if(pergunta == "3d"){
+
+            var reflexao = prompt("Em qual eixo você deseja refletir?").split(" ");
+    
+                //Reflexão 3D:
+        
+    //Coloque suas variáveis e seus cálculos iniciais aqui:
+    var x = parseFloat(prompt("Valor de x:"));
+    
+    console.log("X = " + x);
+    
+    var y = parseFloat(prompt("Valor de y:"));
+
+    console.log("Y = " + y);
+    
+    var z = parseFloat(prompt("Valor de z:"));
+    
+    console.log("Z = " + z);
+    //PARE AQUI
+
+    //Aqui está o produto(multiplicacao) das duas matrizes, isso é apenas uma forma visual de dizer que estamos multiplicando as matrizes.
+    //Mude apenas as numeracoes e talvez as variáveis se tiver diferente das minhas(x, y)
+    //ESSA PARTE EM ESPECÍFICO É APENAS SE SUA CONTA PRECISAR DO CÁLCULO DE CADA EIXO (x, y, z):
+        //no eixo x:
+        if(reflexao == "x"){
+    console.log("[ " + x + " " + y + " " + z + " " + 1 + " ]" + " x " + "[ " + 1 + " " + 0 + " " + 0 + " " + 0 + " ]")
+    console.log("  " + " " + " " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + 0 + " " + -1 + " " + 0 + " " + 0 + " ]")
+    console.log("  " + " " + " " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + 0 + " " + 0 + " " + 1 + " " + 0 + " ]")
+    console.log("  " + " " + " " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + 0 + " " + 0 + " " + 0 + " " + 1 + " ]")
+    //PARE AQUI
+
+    //Aqui é o resultado, onde você coloca a conta que você faz para chegar ao resultado, NAO importa qual conta seja, contanto que chegue ao resultado
+    //correto, é só escrever entre os parenteses amarelos (apague os roxos): EXEMPLO SE SUAS CORES FOREM DIFERENTES = (amarelo(roxo))
+    console.log(" ")
+    console.log("RESULTADO: " + "[ " + ((x*1) + (y*0) + (z*0) + (1*0)) + " " + ((x*0) + (y*(-1)) + (z*0) + (1*0)) + " " + ((x*0) + (y*0) + (z*1) + (1*0)) + " ]")
+    //FIM DESSE EIXO!
+        }
+
+    //Aqui está o produto(multiplicacao) das duas matrizes, isso é apenas uma forma visual de dizer que estamos multiplicando as matrizes.
+    //Mude apenas as numeracoes e talvez as variáveis se tiver diferente das minhas(x, y)
+        //no eixo y:
+        if(reflexao == "y"){
+    console.log("[ " + x + " " + y + " " + z + " " + 1 + " ]" + " x " + "[ " + -1 + " " + 0 + " " + 0 + " " + 0 + " ]")
+    console.log("  " + " " + " " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + 0 + " " + 1 + " " + 0 + " " + 0 + " ]")
+    console.log("  " + " " + " " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + 0 + " " + 0 + " " + 1 + " " + 0 + " ]")
+    console.log("  " + " " + " " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + 0 + " " + 0 + " " + 0 + " " + 1 + " ]")
+    //PARE AQUI
+
+    //Aqui é o resultado, onde você coloca a conta que você faz para chegar ao resultado, NAO importa qual conta seja, contanto que chegue ao resultado
+    //correto, é só escrever entre os parenteses amarelos (apague os roxos): EXEMPLO SE SUAS CORES FOREM DIFERENTES = (amarelo(roxo))
+    console.log(" ")
+    console.log("RESULTADO: " + "[ " + ((x*(-1)) + (y*0) + (z*0) + (1*0)) + " " + ((x*0) + (y*1) + (z*0) + (1*0)) + " " + ((x*0) + (y*0) + (z*1) + (1*0)) + " ]")
+    //FIM DESSE EIXO!
+        }
+
+    //Aqui está o produto(multiplicacao) das duas matrizes, isso é apenas uma forma visual de dizer que estamos multiplicando as matrizes.
+    //Mude apenas as numeracoes e talvez as variáveis se tiver diferente das minhas(x, y)
+        //no eixo z:
+        if(reflexao == "z"){
+    console.log("[ " + x + " " + y + " " + z + " " + 1 + " ]" + " x " + "[ " + -1 + " " + 0 + " " + 0 + " " + 0 + " ]")
+    console.log("  " + " " + " " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + 0 + " " + -1 + " " + 0 + " " + 0 + " ]")
+    console.log("  " + " " + " " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + 0 + " " + 0 + " " + 1 + " " + 0 + " ]")
+    console.log("  " + " " + " " + " " + " " + " " + " " + " " + "  " + "   " + "[ " + 0 + " " + 0 + " " + 0 + " " + 1 + " ]")
+    //PARE AQUI
+
+    //Aqui é o resultado, onde você coloca a conta que você faz para chegar ao resultado, NAO importa qual conta seja, contanto que chegue ao resultado
+    //correto, é só escrever entre os parenteses amarelos (apague os roxos): EXEMPLO SE SUAS CORES FOREM DIFERENTES = (amarelo(roxo))
+    console.log(" ")
+    console.log("RESULTADO: " + "[ " + ((x*(-1)) + (y*0) + (z*0) + (1*0)) + " " + ((x*0) + (y*-1) + (z*0) + (1*0)) + " " + ((x*0) + (y*0) + (z*1) + (1*0)) + " ]")
+    //FIM DESSE EIXO!
+        }
+        }
